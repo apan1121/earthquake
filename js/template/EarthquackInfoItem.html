@@ -1,0 +1,47 @@
+<div id="" class="earthquakeItem" data-id='<%=id%>'>
+    <div class='title' title='<%=title%>'><%=title%></div>
+    <div class="itemContent">
+        <div class="table">
+            <div class="table_tr">
+                <div class="table_td name">
+                    Time
+                </div>
+                <div class="table_td value">
+                    <%=dateTime%> (<%=(tz>0)? '+'+(tz/60): (tz/60) %>:00)
+                </div>
+            </div>
+            <div class="table_tr">
+                <div class="table_td name">
+                    GeoCode
+                </div>
+                <div class="table_td value">
+                    <%=geo.lat%>, <%=geo.lng%>
+                </div>
+            </div>
+            <div class="table_tr">
+                <div class="table_td name">
+                    Mag
+                </div>
+                <div class="table_td value">
+                    <%=mag%>
+                </div>
+            </div>
+            <div class="table_tr">
+                <div class="table_td name">
+                    Depth
+                </div>
+                <div class="table_td value">
+                    <%=depth%>
+                </div>
+            </div>
+            <div class="table_tr">
+                <div class="table_td name">
+                    Location
+                </div>
+                <div class="table_td value">
+                    <%=place%>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

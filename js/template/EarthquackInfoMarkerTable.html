@@ -1,0 +1,15 @@
+        <div><span style='font-weight:900;font-size:14px;'><%= title %></span></div>
+        <table>
+            <tr>
+                <th>Time</th><td>:</td><td><%=dateTime%> (<%=(tz>0)? '+'+(tz/60): (tz/60) %>:00)</td>
+            </tr>
+            <tr>
+                <th>GeoCode</th><td>:</td><td><%=geo.lat%>, <%=geo.lng%></td>
+            </tr>
+            <tr>
+                <th>Depth</th><td>:</td><td><%=depth%></td>
+            </tr>
+            <tr>
+                <th>Mag</th><td>:</td><td><%=mag%></td>
+            </tr>
+        </table>
