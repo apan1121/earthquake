@@ -1,0 +1,151 @@
+ @import url(iconmoon.css);
+
+body {
+    padding: 0;
+    margin: 0;
+}
+html, body, #map {
+    height: 100%;
+}
+.earthquakeInfo{
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    right:0px;
+    top:0px;
+}
+.earthquakeInfo .bar{
+    position: absolute;
+    display: inline-block;
+    margin-left: -33px;
+}
+
+.earthquakeInfo .bar .btn{
+    display: inline-block;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #EEE;
+
+    cursor: pointer;
+    margin-top: 30px;
+    box-shadow: -5px 0px 10px rgba(20%,20%,40%,0.5);
+}
+
+.earthquakeInfo .infoBox{
+    height: 100%;
+    background: #EEE;
+    width:300px;
+    box-shadow: -5px 0px 10px rgba(20%,20%,40%,0.5);
+}
+.earthquakeInfo[toggle='0'] .infoBox{
+    display: none;
+}
+.earthquakeInfo .infoBox .filter{
+    padding: 10px;
+    border-bottom: 1px solid #DDD;
+}
+.earthquakeInfo .infoBox .content{
+    overflow-y: auto;
+}
+.earthquakeInfo .infoBox .copyright{
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #DDD;
+}
+
+.earthquakeInfo .bar .btn span{
+    font-size: 30px;
+    padding: 10px;
+}
+
+
+.earthquakeInfo[toggle='0'] .bar .btn span.right{
+    display: none;
+}
+.earthquakeInfo[toggle='0'] .bar .btn span.left{
+    display: block;
+}
+
+.earthquakeInfo[toggle='1'] .bar .btn span.right{
+    display: block;
+}
+.earthquakeInfo[toggle='1'] .bar .btn span.left{
+    display: none;
+}
+
+
+.slideBox{
+    width: 90%;
+    margin: 0px auto;
+}
+
+.slideBox .slider{
+    width: 100%;
+}
+.slideBox .sliderMsg{
+    text-align: center;
+}
+
+.earthquakeItem{
+    margin: 5px;
+    padding:5px;
+    background: #EEE;
+    border: 1px solid #EEE;
+    border-bottom: 1px solid #999;
+    cursor: pointer;
+    display: none;
+}
+.earthquakeItem.focus{
+    background: #FFD;
+}
+
+.earthquakeItem:hover{
+    background: #DDD;
+}
+
+.earthquakeItem:last-child{
+    border-bottom: 0px;
+}
+
+.earthquakeItem .title{
+    padding: 3px 0px;
+    font-weight: 900;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.earthquakeItem .itemContent {
+    font-size: 13px;
+    color:#444;
+}
+.earthquakeItem .itemContent .name{
+    font-weight: 900;
+    padding-right: 5px;
+    text-align: right;
+}
+.earthquakeItem .itemContent .value{
+    text-align: left;
+}
+
+
+.table{
+    display: table;
+}
+.table .table_tr{
+    display: table-row;
+    padding-bottom: 3px;
+}
+.table .table_tr .table_td{
+    display: table-cell;
+}
+
+.noData{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 900;
+}

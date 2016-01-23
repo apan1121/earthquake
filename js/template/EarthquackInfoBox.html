@@ -1,0 +1,36 @@
+<div class="earthquakeInfo" toggle="1">
+    <div class='bar'>
+        <div class='btn'>
+            <span class='left icon-chevron-left'></span>
+            <span class='right icon-chevron-right'></span>
+        </div>
+    </div>
+    <div class='infoBox'>
+        <div class="filter">
+            <div class="slideBox">
+                <div>
+                    <input class='slider beforeHour' id='beforeHour' type="range" min='0' max='23'>
+                </div>
+                <div class="sliderMsg">
+                    Past <span class='text'></span> hours
+                </div>
+            </div>
+
+            <div class="slideBox">
+                <div>
+                    <input class='slider mag' id='mag' type="range" min='1' max='9' step="0.5">
+                </div>
+                <div class="sliderMsg">
+                    Mag >= <span class='text'></span>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+        </div>
+        <div class="copyright">
+            Data From : <a href='http://earthquake.usgs.gov/earthquakes/feed/v1.0/' target='_blank'>
+                <img src='http://earthquake.usgs.gov/template/images/usgs.jpg' height='30px'>
+            </a>
+        </div>
+    </div>
+</div>
